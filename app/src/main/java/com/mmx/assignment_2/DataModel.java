@@ -1,8 +1,16 @@
 package com.mmx.assignment_2;
 
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
 public class DataModel {
     private String name;
     private String id;
+
+    public DataModel() {
+        name = "";
+        id = "";
+    }
 
     public DataModel(String name, String id) {
         this.name = name;
